@@ -132,7 +132,6 @@ export function Header() {
             side="left"
             className="w-full h-full bg-[#111111] border-none text-white flex flex-col p-0 [&>button]:hidden"
           >
-            {/* 1. Custom Header with a SINGLE close button */}
             <header className="flex justify-between items-center p-6 border-b border-white/10">
               <img src="/logo-light.png" alt="Gravity Team Logo" className="h-8" />
               <SheetClose asChild>
@@ -145,15 +144,12 @@ export function Header() {
                 </Button>
               </SheetClose>
             </header>
-
-            {/* 2. Top-aligned Navigation Links with consistent styles */}
             <div className="p-6">
               <div className="flex flex-col space-y-4 text-xl font-medium">
                 <a href="#" className="py-2 hover:text-gray-300">ABOUT US</a>
 
                 <Accordion type="single" collapsible className="w-full">
                   <AccordionItem value="item-1" className="border-b-0">
-                    {/* The AccordionTrigger now matches the style of the other links */}
                     <AccordionTrigger className="py-2 text-xl font-medium hover:no-underline hover:text-gray-300">
                       OUR SERVICES
                     </AccordionTrigger>
