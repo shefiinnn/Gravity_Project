@@ -20,12 +20,10 @@ export function HeroButton({ children, className, ...props }: HeroButtonProps) {
       )}
       {...props}
     >
-  
       <span
         className="absolute inset-0 border-2 border-solid"
         style={{ borderImageSlice: 1, borderImageSource: gradient }}
       ></span>
-
       <span
         className="
           absolute inset-0

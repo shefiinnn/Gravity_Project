@@ -45,7 +45,7 @@ export function TradingMarquee() {
           <Marquee pauseOnHover={false} speed={50}>
             <div className="flex items-center">
               {[...tickerData, ...tickerData].map((item, index) => (
-                <TickerItem key={index} {...item} />
+                <TickerItem key={index} icon={item.icon} price={item.price} symbol={item.symbol} />
               ))}
             </div>
           </Marquee>
